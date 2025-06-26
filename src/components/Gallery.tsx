@@ -46,9 +46,9 @@ export const Gallery: React.FC<GalleryProps> = ({ places, categories }) => {
         <>
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              {selectedCategory === 'All' ? 'All Destinations' : selectedCategory} 
+              {selectedCategory === 'All' ? 'Todos los lugares' : selectedCategory} 
               <span className="text-lg font-normal text-gray-600 ml-2">
-                ({filteredPlaces.length} {filteredPlaces.length === 1 ? 'destination' : 'destinations'})
+                ({filteredPlaces.length} {filteredPlaces.length === 1 ? 'lugar' : 'lugares'})
               </span>
             </h2>
             {searchTerm && (

@@ -60,7 +60,7 @@ export const PlaceModal: React.FC<PlaceModalProps> = ({ place, isOpen, onClose }
                       className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full flex items-center space-x-2 transition-all duration-200 hover:scale-105 shadow-lg"
                     >
                       <Map className="w-4 h-4" />
-                      <span className="text-sm font-medium">View on Map</span>
+                      <span className="text-sm font-medium">Ver en el Mapa</span>
                     </button>
                   </div>
                 </div>
@@ -74,7 +74,7 @@ export const PlaceModal: React.FC<PlaceModalProps> = ({ place, isOpen, onClose }
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-semibold text-gray-900 mb-4">Highlights</h4>
+                  <h4 className="text-xl font-semibold text-gray-900 mb-4">Destacados</h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {place.highlights.map((highlight, index) => (
                       <div key={index} className="flex items-center space-x-3">
@@ -89,7 +89,7 @@ export const PlaceModal: React.FC<PlaceModalProps> = ({ place, isOpen, onClose }
 
             {/* Description Section */}
             <div className="mt-8 pt-8 border-t border-gray-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">About this destination</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Acerca de este lugar</h3>
               <p className="text-gray-700 leading-relaxed text-lg">
                 {place.longDescription}
               </p>
